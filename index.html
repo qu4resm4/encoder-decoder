@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="http://fonts.cdnfonts.com/css/brittany-signature" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/thegoodmonolith" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/25bc4345e8.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js" defer></script>
+    <title>Decodificador Eliseu Machado</title>
+</head>
+
+<body>
+    <main>
+        <hr>
+        <div class="cont">
+
+            <h1>Decodificador</h1>
+
+            <form>
+
+                <textarea name="texto" id="texto" cols="45" rows="3" placeholder="Insira sua mensagem"></textarea>
+
+                <!--Caixa de selecionar-->
+                <select name="select" id="select" class="select" onclick="selecao()">
+                    <option id="option" value="selecione">Selecione uma opção</option>
+                    <option id="base64" value="base64">Base64</option>
+                    <option id="cifra" value="cifra">Cifra de César</option>
+                </select>
+
+                <div class="chave-cont" id="chaveCont">
+                    <!--Chave para a cifra de César-->
+
+                    <label class="chave" for="range">Escolha o número de passos:</label>
+
+                    <div class="deslize">
+                        <input type="range" value="1" min="1" max="26" class="range" id="range"
+                            oninput="rangenumber.value=value" />
+                        <input type="number" value="1" id="rangenumber" min="1" max="26" oninput="range.value=value" />
+                    </div>
+
+                </div>   
+                <div class="radiobtn">
+                    <!--Botões codificar e decodificar-->
+
+                    <div>
+                        <input type="radio" id="codificar" name="selecione" value="codificar" checked/>
+                        <label for="codificar">Codificar</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="decodificar" name="selecione" value="decodificar" />
+                        <label for="decodificar">Decodificar</label>
+                    </div>
+                </div>
+
+                <textarea id="resultado" cols="45" rows="3" placeholder="Mensagem Codificada"></textarea>
+                <!--Resultado-->
+                <br>
+                <br>    
+                <div class="btn">
+                    <!--Botão para obter o resultado-->
+                    <button id="resultbtn">Codificar Mensagem</button>
+                </div>
+
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+    </main>
+   
+ 
+</body>
+
+</html>
