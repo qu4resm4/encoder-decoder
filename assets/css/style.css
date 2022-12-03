@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #1b4a50;
+    background-color: black;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -13,14 +13,10 @@ body {
 }
 
 .cont {
-    background-color: #051c1f;
     padding: 20px;
     border-radius: 10px;
-    width: 600px;
-    height: 550px;
     margin: 100px;
-    margin-left: 300px;
-  }
+}
 
   .chave{
     color: white;
@@ -41,7 +37,11 @@ h1 {
     gap: 30px;
 }
 
-
+h5 {
+    font-family: Arial;
+    color: white;
+    justify-content: center;
+}
 
 
 /* Todo o conteúdo do formulário */
@@ -74,6 +74,10 @@ select {
 /* Caixa de texto  */
 
 textarea {
+    min-width: 400px;
+    min-height: 100px;
+    max-width: 400px;
+    max-height: 100px;
     background-color: #615959;
     font-family: Arial;
     text-align: center;

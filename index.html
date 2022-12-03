@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/25bc4345e8.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js" defer></script>
-    <title>Decodificador Eliseu Machado</title>
+    <title>EncodeDecode</title>
 </head>
 
 <body>
@@ -19,23 +19,26 @@
         <hr>
         <div class="cont">
 
-            <h1>Decodificador</h1>
+            <h1>CRIPTOGRAFIA</h1>
 
             <form>
 
-                <textarea name="texto" id="texto" cols="45" rows="3" placeholder="Insira sua mensagem"></textarea>
-
+                <textarea name="texto" id="texto" cols="45" rows="3" placeholder="ENTRADA"></textarea>
+               
+                <div class="method">
                 <!--Caixa de selecionar-->
+                <h5>ESCOLHA O MÉTODO</h5>
                 <select name="select" id="select" class="select" onclick="selecao()">
-                    <option id="option" value="selecione">Selecione uma opção</option>
-                    <option id="base64" value="base64">Base64</option>
-                    <option id="cifra" value="cifra">Cifra de César</option>
+                    <option id="option" value="selecione">SELECIONE UMA OPIÇÃO</option>
+                    <option id="base64" value="base64">BASE64</option>
+                    <option id="cifra" value="cifra">CIFRA DE CÉSAR</option>
                 </select>
+                </div>
 
                 <div class="chave-cont" id="chaveCont">
                     <!--Chave para a cifra de César-->
 
-                    <label class="chave" for="range">Escolha o número de passos:</label>
+                    <label class="chave" for="range">ESCOLHA A CHAVE DE TROCA</label>
 
                     <div class="deslize">
                         <input type="range" value="1" min="1" max="26" class="range" id="range"
@@ -49,22 +52,20 @@
 
                     <div>
                         <input type="radio" id="codificar" name="selecione" value="codificar" checked/>
-                        <label for="codificar">Codificar</label>
+                        <label for="codificar">CODIIFICAR</label>
                     </div>
 
                     <div>
                         <input type="radio" id="decodificar" name="selecione" value="decodificar" />
-                        <label for="decodificar">Decodificar</label>
+                        <label for="decodificar">DECODIFICAR</label>
                     </div>
                 </div>
 
-                <textarea id="resultado" cols="45" rows="3" placeholder="Mensagem Codificada"></textarea>
+                <textarea id="resultado" cols="45" rows="3" placeholder="SAÍDA"></textarea>
                 <!--Resultado-->
-                <br>
-                <br>    
                 <div class="btn">
                     <!--Botão para obter o resultado-->
-                    <button id="resultbtn">Codificar Mensagem</button>
+                    <button id="resultbtn">CODIFICAR MERNSAGEM</button>
                 </div>
 
             </form>

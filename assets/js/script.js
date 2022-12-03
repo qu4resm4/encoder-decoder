@@ -22,9 +22,9 @@ function selecao() {
 // Radio Button e botão de resultado!
 radioBtn.addEventListener("click", function () {
     if (codificar.checked) {
-        resultBtn.innerHTML = "Codificar Mensagem!";
+        resultBtn.innerHTML = "CODIFICAR MENSAGEM";
     } else if (decodificar.checked) {
-        resultBtn.innerText = "Decodificar Mensagem!";
+        resultBtn.innerText = "DECODIFICAR MENSAGEM";
     }
 });
 
